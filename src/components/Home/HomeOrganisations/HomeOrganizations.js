@@ -1,11 +1,11 @@
 import React from 'react';
 
-const Local = () => {
+const HomeOrganizations = () => {
     return (
         <div>
-            
+<h1>hey</h1>
         </div>
     );
 };
 
-export default Local;
+export default HomeOrganizations;
