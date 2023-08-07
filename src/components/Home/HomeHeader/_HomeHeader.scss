@@ -1,0 +1,54 @@
+@import "src/scss/settings/_colors.scss";
+
+.header {
+  display: flex;
+  flex-direction: column;
+  margin-right: 50px;
+
+  .header__top {
+    font-size: 14px;
+
+    &-list {
+      display: flex;
+      justify-content: flex-end;
+      list-style: none;
+
+      li:first-child {
+        padding: 9px;
+      }
+
+      li:last-child {
+        border: 1px solid $color-yellow;
+        padding: 9px;
+      }
+
+      .nav-link {
+        text-decoration: none;
+        color: $color-grey;
+      }
+    }
+  }
+
+  .header__bottom {
+
+    &-list {
+      display: flex;
+      justify-content: flex-end;
+      list-style: none;
+      li{
+        margin-left: 15px;
+      }
+      .nav-link {
+        font-size: 18px;
+        text-decoration: none;
+        color: #3C3C3C;
+        padding: 9px 10px;
+        &:hover{
+          border: 1px solid $color-grey;
+          opacity: 0.95;
+      }
+
+      }
+    }
+  }
+}
