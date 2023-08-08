@@ -3,12 +3,13 @@
 .header {
   display: flex;
   flex-direction: column;
-  margin-right: 50px;
+  margin: 37px 100px;
 
   .header__top {
     font-size: 14px;
 
     &-list {
+      margin-bottom: 17px;
       display: flex;
       justify-content: flex-end;
       list-style: none;
