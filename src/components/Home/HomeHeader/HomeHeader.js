@@ -15,7 +15,7 @@ const HomeHeader = () => {
             <div className="header__bottom">
                 <ul className="header__bottom-list">
                     <li><Link className="nav-link" to="start">Start</Link></li>
-                    <li><Link className="nav-link" to="what">O co chodzi?</Link></li>
+                    <li><Link className="nav-link" to="what-about">O co chodzi?</Link></li>
                     <li><Link className="nav-link" to="about">O nas</Link></li>
                     <li><Link className="nav-link" to="organizations">Fundacja i organizacje</Link></li>
                     <li><Link className="nav-link" to="contact">Kontakt</Link></li>
