@@ -1,6 +1,6 @@
 import React from "react";
 import {Link} from "react-router-dom";
-import Decoration from './Decoration.svg'
+import Decoration from "../../../assets/Decoration.svg";
 import HomeHeroImage from "./Home-Hero-Image.jpg"
 import "./_HomeMainWrapper.scss"
 

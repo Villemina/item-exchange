@@ -1,5 +1,5 @@
 import React from "react";
-import {Link} from "react-router-dom";
+import {Link} from "react-scroll";
 import "./_HomeHeader.scss"
 
 
@@ -14,11 +14,11 @@ const HomeHeader = () => {
             </div>
             <div className="header__bottom">
                 <ul className="header__bottom-list">
-                    <li><Link className="nav-link" to="start">Start</Link></li>
-                    <li><Link className="nav-link" to="what-about">O co chodzi?</Link></li>
-                    <li><Link className="nav-link" to="about">O nas</Link></li>
-                    <li><Link className="nav-link" to="organizations">Fundacja i organizacje</Link></li>
-                    <li><Link className="nav-link" to="contact">Kontakt</Link></li>
+                    <li><Link className="nav-link" to="start" smooth={true} offset={50} duration={500}>Start</Link></li>
+                    <li><Link className="nav-link" to="what-about" smooth={true} offset={50} duration={500}>O co chodzi?</Link></li>
+                    <li><Link className="nav-link" to="about" smooth={true} offset={50} duration={500}>O nas</Link></li>
+                    <li><Link className="nav-link" to="organizations" smooth={true} offset={50} duration={500}>Fundacja i organizacje</Link></li>
+                    <li><Link className="nav-link" to="contact" smooth={true} offset={50} duration={500}>Kontakt</Link></li>
                 </ul>
             </div>
         </div>
