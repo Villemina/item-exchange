@@ -1,5 +1,5 @@
 import React from "react";
-import {Link} from "react-router-dom";
+import {Link} from "react-scroll";
 import Decoration from "../../../assets/Decoration.svg";
 import IconOne from "../../../assets/Icon-1.svg";
 import IconTwo from "../../../assets/Icon-2.svg";
