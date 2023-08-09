@@ -1,0 +1,41 @@
+@import "src/scss/settings/_colors.scss";
+
+.about{
+  display: flex;
+  width: 100%;
+  margin-top: 83px;
+ .about__left{
+   width: 50%;
+   background-color: $color-primary;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   text-align: center;
+   align-items: center;
+   h4{
+     margin-top: 100px;
+     font-size: 38px;
+     letter-spacing: -0.76px;
+   }
+   &-decoration{
+     width:25%;
+     padding:30px 0 50px 0
+   }
+   p{
+     font-size: 30px;
+     letter-spacing: -0.6px;
+   }
+   &-signature{
+     width: 20%;
+     margin-left: 55%;
+     padding: 25px;
+   }
+ }
+  .about__right{
+    width: 50%;
+    &-image{
+      width: 100%;
+    }
+  }
+
+}
