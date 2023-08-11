@@ -1,5 +1,6 @@
 import React from "react";
-import {Link} from "react-scroll";
+import {Link as ScrollLink } from "react-scroll";
+import {Link} from "react-router-dom";
 import "./_HomeHeader.scss"
 
 
@@ -14,11 +15,11 @@ const HomeHeader = () => {
             </div>
             <div className="header__bottom">
                 <ul className="header__bottom-list">
-                    <li><Link className="nav-link" to="start" smooth={true} offset={50} duration={500}>Start</Link></li>
-                    <li><Link className="nav-link" to="what-about" smooth={true} offset={50} duration={500}>O co chodzi?</Link></li>
-                    <li><Link className="nav-link" to="about" smooth={true} offset={50} duration={500}>O nas</Link></li>
-                    <li><Link className="nav-link" to="organizations" smooth={true} offset={50} duration={500}>Fundacja i organizacje</Link></li>
-                    <li><Link className="nav-link" to="contact" smooth={true} offset={50} duration={500}>Kontakt</Link></li>
+                    <li><ScrollLink className="nav-link" to="start" smooth={true} offset={50} duration={500}>Start</ScrollLink></li>
+                    <li><ScrollLink className="nav-link" to="what-about" smooth={true} offset={50} duration={500}>O co chodzi?</ScrollLink></li>
+                    <li><ScrollLink className="nav-link" to="about" smooth={true} offset={50} duration={500}>O nas</ScrollLink></li>
+                    <li><ScrollLink className="nav-link" to="organizations" smooth={true} offset={50} duration={500}>Fundacja i organizacje</ScrollLink></li>
+                    <li><ScrollLink className="nav-link" to="contact" smooth={true} offset={50} duration={500}>Kontakt</ScrollLink></li>
                 </ul>
             </div>
         </div>
