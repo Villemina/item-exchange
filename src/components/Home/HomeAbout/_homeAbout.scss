@@ -5,6 +5,7 @@
   width: 100%;
   height: 935px;
   margin-top: 83px;
+  overflow: hidden;
  .about__left{
    width: 50%;
    background-color: $color-primary;
@@ -38,7 +39,6 @@
     &-image{
       width: 120%;
       height: 935px;
-      overflow: hidden;
       background-size: cover;
       background-position: center right;
     }
