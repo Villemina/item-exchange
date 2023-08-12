@@ -6,6 +6,7 @@ import HomeAbout from "./HomeAbout/HomeAbout";
 import HomeOrganizations from "./HomeOrganisations/HomeOrganizations";
 import HomeContact from "./HomeContact/HomeContact";
 import HomeFourSteps from "./HomeFourSteps/HomeFourSteps";
+import HomeFooter from "./HomeFooter/HomeFooter";
 
 
 
