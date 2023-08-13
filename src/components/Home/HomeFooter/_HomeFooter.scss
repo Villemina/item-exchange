@@ -1,0 +1,19 @@
+@import "src/scss/settings/_colors.scss";
+@import "src/scss/settings/_fonts.scss";
+
+.footer{
+  overflow: hidden;
+  position: relative;
+  top:-60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  h4{
+    font-size: 18px;
+    color: $color-grey;
+    margin-left: 250px;
+  }
+  .footer__icons{
+    margin-right: 100px;
+  }
+}

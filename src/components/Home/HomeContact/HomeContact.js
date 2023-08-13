@@ -1,11 +1,12 @@
 import React from 'react';
 import Decoration from "../../../assets/Decoration.svg";
 import ContactImg from "../../../assets/Background-Contact-Form.jpg";
-import HomeFooter from "../HomeFooter/HomeFooter";
 import './HomeContact.scss'
+import HomeFooter from "../HomeFooter/HomeFooter";
 
 const HomeContact = () => {
     return (
+        <>
         <div className="contact" id="contact">
             <img className="contact__image" src={ContactImg} alt="Clothes pile"/>
             <form className="contact__form">
@@ -33,9 +34,10 @@ const HomeContact = () => {
                         Wyślij
                     </button>
                 </div>
-                <HomeFooter/>
             </form>
         </div>
+            <HomeFooter/>
+        </>
     );
 };
 
