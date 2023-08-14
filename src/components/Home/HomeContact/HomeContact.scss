@@ -10,7 +10,8 @@
     opacity: 0.4;
   }
 
-  .contact__form {
+  .contact__form-container {
+    width: 100%;
     margin-left: -40%;
     z-index: 1;
     margin-top: 150px;
@@ -18,8 +19,8 @@
     flex-direction: column;
     align-items: center;
 
-    &-header {
-      text-align: center;
+
+    .contact__form-header {
       font-size: 38px;
       letter-spacing: -0.76px;
       color: $color-dark;
@@ -27,65 +28,77 @@
       margin-right: 100px;
     }
 
-    &-decoration {
-      margin-right: 100px;
+    .contact__form-decoration {
       width: 50%;
+      margin-right: 100px;
     }
 
-    &-container {
-      margin-top: 50px;
+    .home__contact-success{
+      color: green;
+      padding: 20px;
+      font-weight: bold;
+      line-height: 20px;
+      margin-right: 100px;
+      text-align: center;
+    }
+    .contact__form-personal {
+      display: flex;
+      font-size: 16px;
+      font-weight: bold;
+      line-height: 2;
 
-      .contact__form-input {
-        display: flex;
+      input {
+        border: none;
+        border-bottom: 1px solid $color-dark;
+        color: $color-grey;
+        opacity: 0.5;
+      }
+
+      .contact__form-error {
+        color: red;
+        font-size: 11px;
+      }
+    }
+
+    .contact__form-textarea {
+      margin-top: 25px;
+      display: flex;
+      flex-direction: column;
+
+      label {
+        padding: 3px;
         font-size: 16px;
         font-weight: bold;
-        line-height: 2;
+        margin-bottom: 10px;
+      }
 
-        .contact__form-row {
-          display: flex;
+      textarea {
+        border: none;
+        border-bottom: 1px solid $color-dark;
+        color: $color-grey;
+        opacity: 0.5;
+        height: 95px;
+        width: 500px;
 
-          input {
-            border: none;
-            border-bottom: 1px solid $color-dark;
-            color: $color-grey;
-            opacity: 0.5;
-          }
+        &::placeholder {
+          line-height: 1.7;;
         }
       }
 
-      .contact__form-textarea {
-        margin-top: 25px;
-        display: flex;
-        flex-direction: column;
-
-        label {
-          padding: 3px;
-          font-size: 16px;
-          font-weight: bold;
-          margin-bottom: 10px;
-        }
-
-        textarea {
-          border: none;
-          border-bottom: 1px solid $color-dark;
-          color: $color-grey;
-          opacity: 0.5;
-          height: 95px;
-          width: 500px;
-          &::placeholder{
-            line-height: 1.7;
-            ;
-          }
-        }
-      }
-
-      .contact__form-button {
-        margin-top: 20px;
-        margin-left: 350px;
-        padding: 13px 53px;
-        border: 0.75px solid $color-dark;
-        background: none;
+      .contact__form-error {
+        color: red;
+        font-size: 11px;
+        font-weight: bold;
+        margin-top: 5px;
       }
     }
-}
+
+    button {
+      margin-top: 20px;
+      margin-left: 350px;
+      padding: 13px 53px;
+      border: 0.75px solid $color-dark;
+      background: none;
+    }
+  }
 }
