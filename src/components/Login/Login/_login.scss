@@ -1,0 +1,57 @@
+@import "src/scss/settings/_colors.scss";
+@import "src/scss/settings/_fonts.scss";
+
+.login__container{
+  width: 100%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 100px;
+  h3{
+    font-size: 40px;
+    color: $color-dark;
+    letter-spacing: -0.8px;
+  }
+  &-decoration{
+    margin-top: 30px;
+    margin-bottom: 45px;
+  }
+  &-form{
+    width: 250px;
+    height: 200px;
+    background-color: $color-primary;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px 50px;
+    gap: 22px;
+    font-size: 16px;
+    font-weight: bolder;
+    font-family: $font-base;
+    input{
+      border: none;
+      border-bottom: 1px solid $color-dark;
+      color:$color-grey;
+      background: transparent;
+      opacity: 0.5;
+    }
+  }
+  &-buttons{
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    margin-top: 10px;
+
+    button {
+      margin-top: 20px;
+      padding: 13px 13px;
+      background: none;
+      border: none;
+      font-size: 18px;
+      &:last-child{
+        border: 0.75px solid $color-dark;
+      }
+    }
+  }
+}
