@@ -1,7 +1,9 @@
 import React from 'react';
 import HomeHeader from "../../Home/HomeHeader/HomeHeader";
 import Decoration from "../../../assets/Decoration.svg";
+import {Link} from "react-router-dom";
 import './_login.scss'
+
 const Login = () => {
     return (
         <div>
@@ -16,7 +18,7 @@ const Login = () => {
                     <input type="password"/>
                 </form>
                 <div className="login__container-buttons">
-                    <button className="login__container-btn">Załóż konto</button>
+                    <Link className="login__container-btn" to="/registration">Załóż konto</Link>
                     <button className="login__container-btn">Zaloguj sie</button>
                 </div>
             </section>
