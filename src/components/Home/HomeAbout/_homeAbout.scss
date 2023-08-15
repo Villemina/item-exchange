@@ -3,11 +3,11 @@
 .about{
   display: flex;
   width: 100%;
-  height: 935px;
-  margin-top: 83px;
+  height: 700px;
+  margin-top: 65px;
   overflow: hidden;
  .about__left{
-   width: 50%;
+   width: 52%;
    background-color: $color-primary;
    display: flex;
    flex-direction: column;
@@ -35,10 +35,10 @@
    }
  }
   .about__right{
-    width: 50%;
+    width: 48%;
     &-image{
-      width: 120%;
-      height: 935px;
+      width: 135%;
+      height: auto;
       background-size: cover;
       background-position: center right;
     }

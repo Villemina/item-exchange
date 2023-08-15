@@ -13,7 +13,7 @@ const HomeFourSteps = () => {
         <div className="steps" id="what-about">
             <div className="steps__upper">
                 <h3>Wystarczą 4 proste kroki</h3>
-                <img className="wrapper__decoration" src={Decoration} alt="fancy interline"/>
+                <img className="steps__upper-decoration" src={Decoration} alt="fancy interline"/>
             </div>
             <div className="steps__bottom">
                 <div className="steps__bottom-box">

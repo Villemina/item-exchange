@@ -40,15 +40,19 @@
   &-buttons{
     display: flex;
     justify-content: space-between;
-    width: 50%;
-    margin-top: 10px;
+    width: 36%;
+    margin-top: 18px;
 
-    button {
+    .login__container-btn {
       margin-top: 20px;
       padding: 13px 13px;
       background: none;
       border: none;
       font-size: 18px;
+      color: $color-dark;
+      text-decoration: none;
+      font-family: $font-base;
+
       &:last-child{
         border: 0.75px solid $color-dark;
       }

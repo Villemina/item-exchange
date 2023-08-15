@@ -117,14 +117,17 @@ const OrganizationsList = () => {
         if (tabHeader === "foundations") {
             setTable(foundations)
             setActive(tabHeader)
+            setPage(0);
         }
         if (tabHeader === "organization") {
             setTable(organisation)
             setActive(tabHeader)
+            setPage(0);
         }
         if (tabHeader === "local") {
             setTable(local)
             setActive(tabHeader)
+            setPage(0);
         }
     }
 
@@ -174,6 +177,7 @@ const OrganizationsList = () => {
                         </li>
                     </ul>
                 ))}
+                {active !== "local" && (
                 <ReactPaginate pageCount={numberOfPages}
                                onPageChange={handlePageClick}
                                containerClassName={"pagination"}
@@ -184,6 +188,7 @@ const OrganizationsList = () => {
                                nextLinkClassName={"pagination-hidden"}>
 
                 </ReactPaginate>
+                )}
             </div>
         </div>
 
