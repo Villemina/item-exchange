@@ -7,7 +7,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 100px;
+  margin-top: 55px;
   h3{
     font-size: 40px;
     color: $color-dark;
@@ -17,18 +17,20 @@
     margin-top: 30px;
     margin-bottom: 45px;
   }
+
   &-form{
-    width: 250px;
+    width: 270px;
     height: 200px;
     background-color: $color-primary;
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding: 10px 50px;
-    gap: 22px;
+    gap: 10px;
     font-size: 16px;
     font-weight: bolder;
     font-family: $font-base;
+
     input{
       border: none;
       border-bottom: 1px solid $color-dark;
@@ -36,11 +38,17 @@
       background: transparent;
       opacity: 0.5;
     }
+    .login__form-error {
+      color: red;
+      font-size: 11px;
+      font-weight: bold;
+      margin-top: 5px;
+    }
   }
   &-buttons{
     display: flex;
     justify-content: space-between;
-    width: 36%;
+    width: 42%;
     margin-top: 18px;
 
     .login__container-btn {
