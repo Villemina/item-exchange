@@ -1,0 +1,63 @@
+@import "src/scss/settings/_colors.scss";
+@import "src/scss/settings/_fonts.scss";
+
+
+.main{
+  height: 80vh;
+  display: flex;
+  .main__left{
+    width: 50%;
+    &-image{
+      width: 120%;
+      position: relative;
+      top:-20%;
+      z-index: -100;
+    }
+  }
+  .main__right{
+    width: 50%;
+    text-align: center;
+    margin-top: 100px;
+    font-size: 22px;
+    &-header{
+      h2{
+        font-size: 38px;
+      }
+      img{
+        padding: 20px;
+      }
+      h3{
+      font-size: 40px;
+        font-weight: 300;
+        margin-bottom: 40px;
+      }
+    }
+    &-boxes {
+      display: flex;
+      margin:  0 45px;
+      .main__right-square{
+        transform: rotate(45deg);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 135px;
+        height: 135px;
+        border: 0.75px solid #3c3c3c;
+        margin: 10px;
+        .main__right-text{
+          display: flex;
+          align-items: center;
+          flex-direction: column;
+          transform: rotate(-45deg);
+          font-weight: 300;
+          span{
+            margin-top: -40px;
+            padding: 18px;
+          }
+        }
+      }
+    }
+  }
+
+}
