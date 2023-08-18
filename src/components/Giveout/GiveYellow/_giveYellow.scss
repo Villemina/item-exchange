@@ -1,0 +1,15 @@
+@import "src/scss/settings/_colors.scss";
+
+.ribbon{
+  background-color: $color-yellow;
+  padding: 45px 80px;
+  h3{
+    font-size: 36px;
+    font-weight: 500;
+    margin-bottom: 10px;
+  }
+  h4{
+    font-size: 22px;
+    color: $color-dark;
+  }
+}
