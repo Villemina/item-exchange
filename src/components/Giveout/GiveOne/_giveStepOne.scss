@@ -1,0 +1,68 @@
+@import "src/scss/settings/_colors.scss";
+@import "src/scss/settings/_fonts.scss";
+
+
+.first {
+  display: flex;
+
+  .first__left {
+    width: 50%;
+    padding: 20px;
+    margin-left: 50px;
+
+    h3 {
+      margin-top: 70px;
+      font-size: 36px;
+      margin-bottom: 30px;
+    }
+
+    .first__left-inputs {
+      .radio-container {
+        display: block;
+        position: relative;
+        padding-left: 20px + 10px;
+        margin-bottom: 30px;
+        cursor: pointer;
+        font-size: 20px;
+
+        .square-radio {
+          position: absolute;
+          opacity: 0;
+          cursor: pointer;
+        }
+
+        .checkmark {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 20px;
+          height: 20px;
+          border: 1px solid $color-dark;
+          border-radius: 4px;
+        }
+
+        .square-radio:checked + .checkmark {
+          background-color: $color-yellow;
+          border-color: $color-dark;
+        }
+      }
+    }
+    button{
+      background-color: transparent;
+      width: 120px;
+      height: 60px;
+      border: 1px solid $color-dark;
+      margin-top: 100px;
+    }
+  }
+
+  .first__right{
+    width: 50%;
+    &-image{
+      width: 100vw;
+      position: relative;
+      left: -100%;
+      z-index: -100;
+    }
+  }
+}
