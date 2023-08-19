@@ -43,9 +43,7 @@ const Registration = () => {
         return reg.test(password) && password.length > 6;
     };
 
-    const passwordsMatch = (password, repeatPassword) => {
-        return password === repeatPassword;
-    };
+
 
     const validatePasswordRepeat = repeatPassword => {
         return validatePassword(repeatPassword);
@@ -126,7 +124,7 @@ const Registration = () => {
                     {passwordRepeatError && <p className="registration__form-error">Hasła się nie zgadzają!</p>}
                 </form>
                 <div className="registration__container-buttons">
-                    <Link className="registration__container-btn" to="/login">Zaloguj się</Link>
+                    <Link className="registration__container-btn" to="/logowanie">Zaloguj się</Link>
                     <button className="registration__container-btn" onClick={handleClick}>Załóż konto</button>
                 </div>
             </section>

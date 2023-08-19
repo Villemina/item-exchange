@@ -97,7 +97,7 @@ const Login = () => {
                     </p>
                 </form>
                 <div className="login__container-buttons">
-                    <Link className="login__container-btn" to="/registration">Załóż konto</Link>
+                    <Link className="login__container-btn" to="/rejestracja">Załóż konto</Link>
                     <button type="submit"
                             className="login__container-btn"
                             onClick={handleClick}>Zaloguj się
