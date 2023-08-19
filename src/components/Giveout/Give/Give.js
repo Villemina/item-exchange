@@ -6,6 +6,7 @@ import HomeContact from "../../Home/HomeContact/HomeContact";
 import HomeFooter from "../../Home/HomeFooter/HomeFooter";
 import GiveStepOne from "../GiveOne/GiveStepOne";
 import GiveStepTwo from "../GiveTwo/GiveStepTwo";
+import GiveStepThree from "../GiveThree/GiveStepThree";
 
 const Give = () => {
     return (
@@ -15,6 +16,7 @@ const Give = () => {
             <GiveYellow/>
             <GiveStepOne/>
             <GiveStepTwo/>
+            <GiveStepThree/>
             <HomeContact/>
             <HomeFooter/>
         </div>
