@@ -1,5 +1,4 @@
 import React from 'react';
-import GiveBearImage from "../../../assets/Background-Form.jpg";
 import './_giveStepOne.scss';
 
 const GiveStepOne = () => {
@@ -40,9 +39,6 @@ const GiveStepOne = () => {
                     </label>
                 </div>
                 <button>Dalej</button>
-            </div>
-            <div className="first__right">
-                <img className="first__right-image" src={GiveBearImage} alt="Teddy Bear" />
             </div>
         </section>
     );

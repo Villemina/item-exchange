@@ -16,7 +16,7 @@ const HomeMainWrapper = () => {
                 <div className="wrapper__right-buttons">
                     <ul>
                         <li>
-                            <Link className="nav-link" to="/login">
+                            <Link className="nav-link" to="/oddaj-rzeczy">
                                 <button>
                                     Oddaj <br />rzeczy
                                 </button>
