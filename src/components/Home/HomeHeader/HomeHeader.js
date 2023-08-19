@@ -11,8 +11,8 @@ const HomeHeader = () => {
         <div className="header">
             <div className="header__top">
                 <ul className="header__top-list">
-                    <li><Link className="nav-link" to="/login">Zaloguj</Link></li>
-                    <li><Link className="nav-link" to="/registration">Załóż konto</Link></li>
+                    <li><Link className="nav-link" to="/logowanie">Zaloguj</Link></li>
+                    <li><Link className="nav-link" to="/rejestracja">Załóż konto</Link></li>
                 </ul>
             </div>
             <div className="header__bottom">
