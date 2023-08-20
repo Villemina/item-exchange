@@ -12,12 +12,12 @@ const GiveStepTwo = () => {
                         <label htmlFor="bag-select">liczba 60l worków:</label>
                         <select name="Bags" id="bag-select">
                             <option value="">---Wybierz---</option>
-                            <option value="1">1 worek</option>
-                            <option value="2">2 worki</option>
-                            <option value="3">3 worki</option>
-                            <option value="4">4 worki</option>
-                            <option value="5">5 worków</option>
-                            <option value="more">wiecej...</option>
+                            <option value="1">1 </option>
+                            <option value="2">2 </option>
+                            <option value="3">3 </option>
+                            <option value="4">4 </option>
+                            <option value="5">5 </option>
+
                         </select>
                     </div>
                 </div>

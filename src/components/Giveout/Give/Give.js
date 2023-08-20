@@ -7,6 +7,8 @@ import HomeFooter from "../../Home/HomeFooter/HomeFooter";
 import GiveStepOne from "../GiveOne/GiveStepOne";
 import GiveStepTwo from "../GiveTwo/GiveStepTwo";
 import GiveStepThree from "../GiveThree/GiveStepThree";
+import GiveThankYou from "../GiveThankYou/GiveThankYou";
+import GiveStepFour from "../GiveStepFour/GiveStepFour";
 
 const Give = () => {
     return (
@@ -17,6 +19,8 @@ const Give = () => {
             <GiveStepOne/>
             <GiveStepTwo/>
             <GiveStepThree/>
+            <GiveStepFour/>
+            <GiveThankYou/>
             <HomeContact/>
             <HomeFooter/>
         </div>
