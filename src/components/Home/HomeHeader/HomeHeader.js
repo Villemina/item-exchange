@@ -17,8 +17,8 @@ const HomeHeader = () => {
             </div>
             <div className="header__bottom">
                 <ul className="header__bottom-list">
-                    <li>{" "}<ScrollLink className="nav-link" to="start" smooth={true} offset={50}
-                                         duration={500}>Start</ScrollLink></li>
+                    <li><Link className="nav-link" to="
+                   /" >Start</Link></li>
                     <li><ScrollLink className="nav-link" to="what-about" smooth={true} offset={50} duration={500}>O co
                         chodzi?</ScrollLink></li>
                     <li><ScrollLink className="nav-link" to="about" smooth={true} offset={50} duration={500}>O
