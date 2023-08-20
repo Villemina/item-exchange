@@ -3,6 +3,7 @@
 
 
 .second {
+  height: 95vh;
   display: flex;
   background:url("../../../assets/Background-Form.jpg") center/cover no-repeat ;
 
@@ -13,12 +14,16 @@
     h3 {
       font-size: 36px;
       margin-top: 70px;
-      margin-bottom: 30px;
+      margin-bottom: 50px;
+      font-weight: bolder;
     }
 
     .second__left-inputs {
       display: flex;
       flex-direction: column;
+      label{
+        margin-right: 30px;
+      }
     }
 
     button {
@@ -27,7 +32,7 @@
       height: 60px;
       margin-right: 30px;
       border: 1px solid $color-dark;
-      margin-top: 280px;
+      margin-top: 300px;
     }
   }
 }
