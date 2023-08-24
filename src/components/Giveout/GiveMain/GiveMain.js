@@ -1,9 +1,12 @@
-import React from 'react';
+import React, {useState} from 'react';
 import GiveMainImg from "../../../assets/Form-Hero-Image.jpg";
 import Decoration from "../../../assets/Decoration.svg";
 import './_giveMain.scss';
+import {useSelector} from "react-redux";
 
 const GiveMain = () => {
+    const [steps] = useState([1, 2, 3, 4, 5]);
+    const step = useSelector(e => e.currentStep.currentStep);
     return (
         <section className="main">
             <div className="main__left">
@@ -40,6 +43,33 @@ const GiveMain = () => {
                         <span >4</span>
                         <p>Zamów Kuriera</p>
                     </div>
+                    {steps.map(e => {
+                        if (e === step) {
+                            return (
+                                <div
+                                    key={e + "n"}
+                                    className="give-main-min__steps-square give-main-min__steps-square--active"
+                                >
+                                    {e === 5 ? <FontAwesomeIcon icon={faCheck} /> : e}
+                                </div>
+                            );
+                        } else if (e < step) {
+                            return (
+                                <div
+                                    key={e + "n"}
+                                    className="give-main-min__steps-square give-main-min__steps-square--visited"
+                                >
+                                    {e === 5 ? <FontAwesomeIcon icon={faCheck} /> : e}
+                                </div>
+                            );
+                        } else {
+                            return (
+                                <div key={e + "n"} className="give-main-min__steps-square">
+                                    {e === 5 ? <FontAwesomeIcon icon={faCheck} /> : e}
+                                </div>
+                            );
+                        }
+                    })}
                 </div>
             </div>
             </div>
