@@ -34,5 +34,4 @@ const GiveYellow = () => {
     );
 };
 
-export { GiveRibbon };
 export default GiveYellow;
